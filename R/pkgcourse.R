@@ -1,4 +1,4 @@
-#' pkgcourse: A package created on Mango Solutions packgaes course.
+#' pkgcourse: A package created on Mango Solutions packages course.
 #'
 #' Tools for doing basic analysis.
 #'
