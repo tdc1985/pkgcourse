@@ -1,9 +1,14 @@
 #' statSummary
 #'
 #' @param x a \code{numeric} vector for summarising
-#' @param na.rm a \code{logical} value stating whether to remove \code{NA} values; defaults to \code{TRUE} - remove \code{NA}s
+#' @param na.rm a \code{logical} value stating whether to remove \code{NA}
+#'     values; defaults to \code{TRUE} - remove \code{NA}s
 #'
-#' @return Returns a vector of summary statistics for \code{x}
+#' @return Returns a vector of summary statistics for \code{x}:
+#'\describe{
+#' \item{Min}{Minimum value of data}
+#' \item{Mean}{Mean of the data}
+#' }
 #'
 #' @author Tony Carter <tdcarter1985@@gmail.com>
 #' @export
