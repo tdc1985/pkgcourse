@@ -14,11 +14,18 @@
 #' @export
 #'
 #' @examples
-statSummary <- function(x, na.rm = TRUE){
+statSummary <- function(x, na.rm = TRUE) {
+  if (!is.numeric(x)) {
+    stop("You must provide a numeric vector", call. = FALSE)
+  }
 
+  if (!is.logical(na.rm)) {
+    warning("na.rm should be logical. na.rm set to default TRUE")
+    na.rm = TRUE
+  }
   xMean <- mean(x, na.rm = na.rm)
   xVar <- var(x, na.rm = na.rm)
-  xRange <- range(x, na.rm = ra.rm)
+  xRange <- range(x, na.rm = na.rm)
 
   c("Min" = xRange[1],
     "Mean" = xMean,
