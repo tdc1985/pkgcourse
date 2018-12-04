@@ -4,6 +4,8 @@
 #' @param na.rm a \code{logical} value stating whether to remove \code{NA} values; defaults to \code{TRUE} - remove \code{NA}s
 #'
 #' @return Returns a vector of summary statistics for \code{x}
+#'
+#' @author Tony Carter <tdcarter1985@@gmail.com>
 #' @export
 #'
 #' @examples
